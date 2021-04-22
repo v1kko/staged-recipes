@@ -17,10 +17,10 @@ build:
 
 requirements:
   build:
-    - cmake
-    - {{ compiler('fortran') }}  # [not win]
-    - m2w64-gcc-fortran  # [win]
     - {{ compiler('c') }}
+    - {{ compiler('cxx') }}
+    - {{ compiler('fortran') }}
+    - cmake
     - make
   host:
     - libblas
