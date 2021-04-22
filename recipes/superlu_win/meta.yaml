@@ -18,8 +18,8 @@ build:
 requirements:
   build:
     - cmake
-    - {{ compiler('fortran') }} # [not win]
-    - m2w64-gcc-fortran # [win]
+    - {{ compiler('fortran') }}  # [not win]
+    - m2w64-gcc-fortran  # [win]
     - {{ compiler('c') }}
     - make
   host:
